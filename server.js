@@ -12,6 +12,7 @@ app.get("/:id",(req, res) => {
 })
 
 app.post("/", (req, res) => {
+    mockBlog.push(req.body)
     res.json(req.body)
 })
 
